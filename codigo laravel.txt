@@ -1,0 +1,18 @@
+///instalar
+composer create-project --prefer-dist laravel/laravel appshop
+///ejecutar laravel
+php artisan serve
+/// crear controllar
+ php artisan make:controller TestControlle
+/// instalaro auth
+composer require laravel/ui
+php artisan ui vue --auth
+/// para migrar -->class AppServiceProvider extends ServiceProvider
+
+use Illuminate\Support\Facades\Schema;
+public function boot()
+    {
+        Schema::defaultStringLength(191);
+    }
+/// migrar tablas
+ php artisan migrate
